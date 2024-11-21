@@ -198,11 +198,11 @@ unsigned long long score = 0;
 
 vector<string> nowBoard(22, "..........");
 auto& getBoard() {
-	while (isBoardBlocking) { cerr << " " << "\b"; }
+	while (isBoardBlocking) { continue; }
 	return nowBoard;
 }
 auto& getBoard(int i, int j){
-	while (isBoardBlocking) { cerr << " " << "\b"; }
+	while (isBoardBlocking) { continue; }
 	return nowBoard[i][j];
 }
 
